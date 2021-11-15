@@ -1,6 +1,16 @@
 # README #
 
-This is a code challenge API Restfull use Passpost parkage to verify.
+This is a code challenge API Restfull use Passpost parkage to verify. 
+Idea user type admin can: 
+  - create user for loan. 
+  - create Loan.
+  - update Loan.
+  - delete Loan
+  - create Repayment
+  - update Repayment
+  - delete Repayment.
+
+Validator in create user, loan and repayment
 
 ## Database structure ##
 * Table Users: 
@@ -71,6 +81,9 @@ This is a code challenge API Restfull use Passpost parkage to verify.
         - testRequiredFieldsForRegistration: required field when register
         - testSuccessfulRegistration: test register success
         - testSuccessfulLogin: login success
+        - testIndexLoan: admin will login and get list Loan
+        - testCreateLoan: admin will login and create new Loan
+        - testIndexRepaymentsFail: create new user, create Loan and repayment fail in validate case.
 
     - With this structure, I have write with Service container, Dependency injection to prepare write advance mock data to test. I will complete in nexttime.
 
